@@ -1,50 +1,40 @@
-# Ipl_Score_Prediction
-In today’s world of cricket every run and decision can turn the game around. Using Deep Learning to predict IPL scores during live matches is becoming a game changer. This article shows how advanced algorithms help us to forecast scores with impressive accuracy, giving fans and analysts valuable insights in real time.
-#Table of content
-1. Installing Libraries
-We are importing all necessary Python libraries such as NumPy, Pandas, Scikit-learn, Matplotlib, Keras and Seaborn required for data handling, visualization, preprocessing and building deep learning models.
-2. Loading the Dataset
-The dataset can be downloaded from here. It contains data from 2008 to 2017 and contains features like venue, date, batting and bowling team, names of batsman and bowler, wickets and more. We will load the IPL cricket data from CSV files into pandas DataFrames to explore and prepare for modeling.
-3. Exploratory Data Analysis
-We will do Exploratory Data Analysis (EDA) to analyze how many unique matches have been played at each venue by counting distinct match IDs for every venue. Then, we’ll visualize this data using a horizontal bar chart to see which venues host the most matches.
-4. Performing Label Encoding
-We will convert categorical text data into numeric labels using Label Encoding because ML models work with numbers.
+# 🏏 IPL Score Prediction Using Deep Learning
 
-LabelEncoder() converts text labels into integers.
-fit_transform() learns encoding and applies it.
-copy() : creates a duplicate of the DataFrame to avoid changing the original data
+This project leverages Deep Learning techniques to predict IPL scores in real time, using Python-based data analysis and modeling tools. The aim is to deliver accurate score forecasts that can assist fans, analysts, and teams during live matches.
 
+## 🔍 Problem Statement
+Cricket matches are dynamic, and every ball can shift the momentum. Predicting scores as the match progresses is crucial for strategic decisions and viewer engagement. This project uses historical IPL data and deep learning models to forecast match scores with high accuracy.
 
-5. Performing Feature Selection
-drop() : removes specified columns from the DataFrame
-corr() : computes pairwise correlations between numerical features
-sns.heatmap() : creates a colored matrix to visualize correlations with values
-plt.show() : displays the plot on screen    
+## 💡 Proposed Solution
+- **Data Handling**: Using NumPy and Pandas for data cleaning and manipulation.
+- **Visualization**: Matplotlib and Seaborn to uncover match trends and patterns.
+- **Modeling**: Deep learning model built with Keras (LSTM), supplemented by baseline models using Scikit-learn.
+- **Deployment**: Interface developed in Streamlit/Flask for real-time score display; hosted via Heroku/AWS.
 
+## 🧠 System Approach
+- Jupyter Notebook as development environment
+- Data preprocessing and feature engineering
+- Time-series prediction using LSTM
+- Evaluation via MAE, RMSE, and R² metrics
 
-6. Splitting the Dataset into Training and Testing
-DataFrame indexing (data_encoded[feature_cols]) : selects specified columns as features
-train_test_split() : splits features and target into training and test subsets
-test_size=0.3 : assigns 30% of data for testing
-random_state=42 : ensures reproducible splits by fixing the random seed
+## 🚀 Future Scope
+- Extend to other formats like ODI and T20 World Cup  
+- Predict individual player performances  
+- Develop strategic simulation tools and AR-enabled live match analysis
 
+## 📚 Libraries Used
+- [NumPy](https://numpy.org/doc)  
+- [Pandas](https://pandas.pydata.org/docs)  
+- [Scikit-learn](https://scikit-learn.org/stable/documentation.html)  
+- [Matplotlib](https://matplotlib.org/stable/contents.html)  
+- [Seaborn](https://seaborn.pydata.org/introduction.html)  
+- [Keras](https://keras.io/api)  
 
-7. Performing Feature Scaling
+## 📝 How to Run
+1. Clone the repo  
+2. Install dependencies from `requirements.txt`  
+3. Run the notebook in Jupyter  
+4. For deployment, launch the Streamlit/Flask app
 
-8. Building the Neural Network
-
-9. Training the Model
-
-10. Evaluating the Model
-
-11. Creating an Interactive Widget for Score Prediction
-
-
-
-
-
-
-
-
-
-
+## 🎯 Authors
+- *Your Name Here*
