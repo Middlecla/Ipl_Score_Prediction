@@ -37,4 +37,4 @@ Cricket matches are dynamic, and every ball can shift the momentum. Predicting s
 4. For deployment, launch the Streamlit/Flask app
 
 ## 🎯 Authors
-- *Your Name Here*
+- *Rohit Kumar*
